@@ -1,0 +1,31 @@
+{
+  "name": "Restful-ADB",
+  "version": "1.0.0",
+  "description": "API touch to adb commands",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "v20.18.0"
+  },
+  "dependencies": {
+    "@devicefarmer/adbkit": "^3.3.6",
+    "esm": "^3.2.25",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "loglevel": "^1.9.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/register": "^7.25.7",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "nodemon esm src/index.js ",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
+  },
+  "keywords": [],
+  "author": "Vinay Sagar S D",
+  "license": "MIT"
+}
