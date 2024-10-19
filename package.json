@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@devicefarmer/adbkit": "^3.3.6",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.21.1",
     "express-async-errors": "^3.1.1",
